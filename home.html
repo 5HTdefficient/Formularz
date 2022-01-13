@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+
+<html lang="pl" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Formularz</title>
+    <link rel="stylesheet" href="CSS/table.css">
+    <script src="Scripts/check.js" type="text/javascript" charset="utf-8" lang="pl"></script>
+</head>
+<body>
+    <h1>Pytanie 1</h1>
+    <h2></h2>
+    
+    <h2>Rozdziel punkty w 4 liniach.Liczba puntów: 100</h2>
+    <table>
+        <tr>
+            <td id="question" colspan="2"><b>1. Jaka jest ogóna charakterystyka organizacji</b></td>
+            <td><p>Stan obecny</p></td>
+            <td><p>Stan pożądany</p></td>
+        </tr>
+        <tr>
+            <td>A.</td>
+            <td>Organizacja jest miejscem osobistego spotkania. Przypomina wielką rodzinę. Ludzie mocno się angażują.</td>
+            <td><input type="number" name="A1" value="0" min="0" max="100" id="A1" onchange="check()" /></td>
+            <td><input type="number" name="A2" value="0" min="0" max="100" id="A2" onchange="check()" /></td>
+        </tr>
+        <tr>
+            <td>B.</td>
+            <td>Dominującymi cechami organizacji są energia i przedsiębiorczość. Ludzie chętnie podejmują ryzyko.</td>
+            <td><input type="number" name="B1" value="0" min="0" max="100" id="B1" onchange="check()" /></td>
+            <td><input type="number" name="B1" value="0" min="0" max="100" id="B2" onchange="check()" /></td>
+        </tr>
+        <tr>
+            <td>C.</td>
+            <td>
+                W organizacji liczą się przede wszystkim wyniki. Główną troską jest jak najlpesze wykonywanie zadań.
+                Pracownicy są bardzo ambitni i naastawieni na osiągnięcia.
+            </td>
+            <td><input type="number" name="C1" value="0" min="0" max="100" id="C1" onchange="check()" /></td>
+            <td><input type="number" name="C2" value="0" min="0" max="100" id="C2" onchange="check()" /></td>
+        </tr>
+        <tr>
+            <td>D.</td>
+            <td>W organizacji obowiązuje ścisła hierarchia i kontrola. Tym, co robią ludzie, zazwyczaj rządzą formalne procedury</td>
+            <td><input type="number" name="D1" value="0" min="0" max="100" id="D1" onchange="check()" /></td>
+            <td><input type="number" name="D2" value="0" min="0" max="100" id="D2" onchange="check()" /></td>
+        </tr>
+        <tr>
+            <td colspan="2"><b>Suma</b></td>
+            <td id="sum1" style="background-color:yellow">0</td>
+            <td id="sum2" style="background-color:yellow">0</td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td id="rest1">Pozostało: 100</td>
+            <td id="rest2">Pozostało: 100</td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td id="com1">Rozdaj wszystkie punkty!</td>
+            <td id="com2">Rozdaj wszystkie punkty!</td>
+        </tr>
+
+    </table>
+    <input type="submit" name="submit" value="Kolejne pytanie" onclick="check()" />
+
+</body>
+</html>
